@@ -1,13 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int reversestr(string & str,int s, int e){
-    if(s>=e) return;    
-    swap(str[s],str[e]);
-    return reversestr(str,s++,e--);
-}
-int main(){
+string reversestr(string s, int n)
+{
+    int static st;
+    if (st >= n)
+    {
+        return s;
+    }
+    swap(s[st], s[n]);
+    st++;
+    return reversestr(s, n - 1);
     
-    string str="abcd";
-    cout<<reversestr(str,0,str.length()-1);
+}
+int main()
+{
+
+    string str = "abcd";
+    cout << reversestr(str, str.length() - 1);
     return 0;
 }
