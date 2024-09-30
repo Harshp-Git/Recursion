@@ -24,7 +24,9 @@ using namespace std;
 
 
 int main(){
-    vector<int>nums={1,2,3,1};  
-    cout<<rob(nums);
+    vector<int>nums={1,2,3,1};
+    vector<int>num={2,7,9,3,1};  
+    cout<<rob(nums)<<endl;
+    cout<<rob(num);
     return 0;
 }
