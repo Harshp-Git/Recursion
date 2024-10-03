@@ -1,5 +1,5 @@
 #include<iostream>
-#include<iostream>
+#include<vector>
 #include<bits/stdc++.h>
 using namespace std;
 int LCS(string &str1, string &str2, int i, int j, vector<vector<int>> &dp) {
@@ -18,7 +18,7 @@ int LCS(string &str1, string &str2, int i, int j, vector<vector<int>> &dp) {
 
 int main(){
     string text1 ="abcde";
-    string text2 ="fgh";
+    string text2 ="bde";
     cout<<longestCommonSubsequence(text1,text2)  ;  
     return 0;
 }
